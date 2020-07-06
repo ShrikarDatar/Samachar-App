@@ -43,6 +43,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             holder.newsDate.setText(art.getPublishedAt());
             String imageUrl =art.getUrlToImage();
             Picasso.get().load(imageUrl).into(holder.imageView);
+
             holder.cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

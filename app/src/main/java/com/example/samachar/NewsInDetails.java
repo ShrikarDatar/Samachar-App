@@ -17,11 +17,16 @@ public class NewsInDetails extends AppCompatActivity {
         setContentView(R.layout.activity_news_in_details);
         Intent intent = getIntent();
         String url = intent.getStringExtra("url");
+
         webView = findViewById(R.id.webView);
         webView.getSettings().setDomStorageEnabled(true);
         webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setAppCacheMaxSize( 10 * 1024 * 1024 );
+
+        webView.setScrollBarStyle(WebView.SCROLLBARS_INSIDE_OVERLAY);
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.setWebViewClient(new WebViewClient());
+
         webView.loadUrl(url);
 
 
