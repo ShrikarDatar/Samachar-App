@@ -8,62 +8,18 @@ public class Articles {
     @SerializedName("source")
     @Expose
     private Source source;
-
     @SerializedName("author")
     @Expose
     private String author;
-
-    @SerializedName("description")
-    @Expose
-    private String descrption;
-
     @SerializedName("title")
     @Expose
     private String title;
-
+    @SerializedName("description")
+    @Expose
+    private String description;
     @SerializedName("url")
     @Expose
     private String url;
-
-    @SerializedName("urlToimage")
-    @Expose
-    private String urlToImage;
-
-    @SerializedName("publishedAt")
-    @Expose
-    private String publishedAt;
-
-    public Source getSource() {
-        return source;
-    }
-
-    public void setSource(Source source) {
-        this.source = source;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public String getDescrption() {
-        return descrption;
-    }
-
-    public void setDescrption(String descrption) {
-        this.descrption = descrption;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
 
     public String getUrl() {
         return url;
@@ -73,7 +29,53 @@ public class Articles {
         this.url = url;
     }
 
+    @SerializedName("urlToImage")
+    @Expose
+    private String urlToImage;
+    @SerializedName("publishedAt")
+    @Expose
+    private String publishedAt;
+
+    public Source getSource() {
+
+        return source;
+    }
+
+    public void setSource(Source source) {
+
+        this.source = source;
+    }
+
+    public String getAuthor() {
+
+        return author;
+    }
+
+    public void setAuthor(String author) {
+
+        this.author = author;
+    }
+
+    public String getTitle() {
+
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+
+        this.description = description;
+    }
+
     public String getUrlToImage() {
+
         return urlToImage;
     }
 
@@ -86,6 +88,7 @@ public class Articles {
     }
 
     public void setPublishedAt(String publishedAt) {
+
         this.publishedAt = publishedAt;
     }
 }

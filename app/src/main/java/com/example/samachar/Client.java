@@ -1,7 +1,7 @@
 package com.example.samachar;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
+@SuppressWarnings("ALL")
 public class Client {
     private static final String BASE_URL = "https://newsapi.org/v2/";
 

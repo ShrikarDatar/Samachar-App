@@ -10,11 +10,9 @@ public class Headlines {
     @SerializedName("status")
     @Expose
     private String status;
-
     @SerializedName("totalResults")
     @Expose
-    private int totalResults;
-
+    private String totalResults;
     @SerializedName("articles")
     @Expose
     private List<Articles> articles;
@@ -23,15 +21,11 @@ public class Headlines {
         return status;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public int getTotalResults() {
+    public String getTotalResults() {
         return totalResults;
     }
 
-    public void setTotalResults(int totalResults) {
+    public void setTotalResults(String totalResults) {
         this.totalResults = totalResults;
     }
 
@@ -41,5 +35,9 @@ public class Headlines {
 
     public void setArticles(List<Articles> articles) {
         this.articles = articles;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
